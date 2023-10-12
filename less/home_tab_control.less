@@ -1,0 +1,36 @@
+@import url(./variety.less);
+.tab-control{
+  display: flex;
+  align-content: center;
+  margin: 0 3.2vw;
+  font-family: @productFontFamily;
+  .item{
+    flex: 1;
+    text-align:center;
+    .title{
+      display: flex;
+      justify-content: center;
+      align-items: flex-end;
+      height: 8vw;
+      font-size: @bigFontSize;
+      color: #666;
+      
+    }
+    .info{
+      font-size: @smallFontSize;
+      color: #999;
+    }
+    &.active{
+      .title{
+        color: @mainColor;
+      }
+      .info{
+        padding: 0 1.6vw;
+        color: #fff;
+        background-image: linear-gradient(to right,#f00,#ff3164) ;
+        border-radius: 2.4vw;
+
+      }
+    }
+  }
+}

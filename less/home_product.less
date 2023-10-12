@@ -1,0 +1,83 @@
+@import url(./variety.less);
+@import url(./minix.less);
+.product{
+  display: flex;
+  flex-wrap: wrap;
+  margin:3.2vw 2.1333vw 0;
+  font-family: @productFontFamily;
+  .item{
+    width: 46.6667vw;
+    margin-bottom: 6px;
+    background-color: #fff;
+    border-radius: 1.3333vw;
+    &:nth-child(2n){
+      margin-left: 1.6vw;
+    }
+    .log{
+      width: 100%;
+      margin-bottom: 1.6vw;
+    }
+    .info{
+      padding: 0 2.4vw 1.6vw;
+      .company{
+        display: flex;
+        align-items: center;
+        margin-bottom: 1.0667vw;
+        .flag{
+          display: inline-block;
+          width: 4vw;
+          height: 4vw;
+          margin-right: 6px;
+        }
+        .name{
+          font-size: @smallFontSize;
+          color: #666;
+        }
+      }
+      .desc{
+        font-size: 3.4667vw;
+          color: #333;
+          .wrap_ellipsis();
+           .self-support{
+          display: inline-block;
+          position: relative;
+          top: 0.53333vw;
+          width: 6.9333vw;
+          height: 3.4667vw;
+          margin-right: 1.6vw;
+        }
+      }
+      .tags{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        margin-top: 1.3333vw;
+        .tag{
+          height: 3.2vw;
+          line-height: 3.2vw;
+          text-align: center;
+          margin: 0 .8vw .5333vw 0;
+          padding:0 1.0667vw;
+          font-size: @smallFontSize;
+          color: #f00;
+          border: .2667vw solid #f00;
+          border-radius: 0.8vw;
+        }
+      }
+      .price{
+        margin-top: 1.3333vw;
+        .text{
+          font-size: @smallFontSize;
+          line-height: 3.2vw;
+          color: #f00;
+        }
+        .account{
+          font-size: 4.8vw;
+          line-height: 4.8vw;
+          color: #f00;
+        }
+      }
+    }
+    
+  }
+}
